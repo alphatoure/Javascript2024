@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #efe6dd;
+}
+.container{
+    width: 68%;
+    /* padding: 10px 28px; */
+    margin: 0 auto;
+}
+.entete_section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.titre_restaurant{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.titre_menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #ff5500;
+}
+ .nav-bar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+ }
+  
+ 
+ .nav-bar  .menu{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: #c79322;
+    list-style-type: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: sans-serif;
+ }
+
+
+.ligne{
+    width: 100%;
+    justify-content: center;
+    height: 2px;
+    background: #000000;
+    margin: 30px 0;
+}
+.section-plats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+    margin: 40px 10px;
+    margin-left: 0px;
+
+
+    
+}
+.section-plats2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 40px 10px;
+    margin-left: 0px;
+    align-content: center;
+
+    
+}
+.section-plats3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    align-content: center;
+    margin:0px 0px;
+    margin-left: 0px;
+    padding: 0 0px;
+    
+}
+.left{
+ width: 50%;
+ display: flex;
+ justify-content: center;
+ margin-right: 0px 0px;
+ padding-right: 0px 0px;
+ left: -34px;
+
+
+}
+.right {
+    display: flex;
+    float: right;
+    margin: 0px 0px;
+    padding: 0px;
+}
+.left .left-interne1 .titre-pizza{
+    padding-left: -10px;
+    margin-left: -24px ;
+}
+.titre-pizza .titre-p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    line-height: normal;
+}
+.left-interne1{
+    width: 45%;
+    padding-left: -6px;
+}
+.right-interne1{
+    width:auto;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    align-content: center;
+
+}
+.right-interne2{
+    width:auto;
+    align-items: center;
+    align-content: center;
+}
+.right-interne2 .piamini{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-items: center;
+    align-content: center;
+    margin-top: 80px;
+}
+.prix{
+  font-size: 15px;
+}
+.paragraph{
+    color: #181616ba;
+    font-size: 12px;
+    width: 160px;
+    padding: 0 auto ;
+    margin: 10px 5px;
+}
+.pizza-img{
+    width: 150px;
+    float: right;
+    height: 150px;
+    border-radius: 50%;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+.piamini-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.burger-img{
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+}
+.kandia-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.riz-poisson-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.yassa-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+} 
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+}
+.h2-gauche{
+    width: 50%;
+    margin: 8px;
+}
+.h2-droite{
+    width: 50%;
+    margin: 8px;
+}
+.premiere_partie{
+    width: 50%;
+    display: flex;
+    font-size: 14px;
+}
+.premiere_partie .gauche{
+    width: 70%;
+}
+.premiere_partie .droite{
+    width: 30%;
+    float: right;
+}
+.deuxieme_partie{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+}
+
+/* Media query */
+@media screen and (max-width:557px){
+    body{
+        margin: 14px auto;
+    }
+     .titre_restaurant{
+        width: 90vh;
+        font-size: 12px;
+        text-align: center;
+     }
+     .titre_menu{
+        font-size: 20px;
+     }
+     .nav-bar{
+        width: 100%;
+        font-size: 17px;
+     }
+     .nav-bar  ul{
+        width: 100%;
+        font-size: 18px;
+     }
+     .nav-bar .menu a{
+        font-size: 14px;
+     }
+     .ligne{
+        width: 100%;
+        margin: 12px auto;
+     }
+     .sections-plats{
+        width: 90%;
+        padding: 18px;
+     }
+     .left{
+        width: 50%;
+        
+     }
+      
+     .paragraph{
+       
+        font-size: 12px;
+        margin: 6px;
+        padding: 8px;
+     }
+     .section-plats{
+        width: 100%;
+        padding: 0 5px;
+     }
+     .left-interne1{
+        width: 100%;
+        height: auto;
+        font-size: 22px;
+        text-align: center;
+        font-weight: 400;
+        text-align: center;
+     }
+     
+     .pizza-img{
+        width: 70px;
+        height: 70px;
+     }
+
+     .titre-pizza{
+        width: 180px;
+        margin-left:23px ;
+        justify-content: center;
+        text-align: center;
+     }
+     .titre-p{
+       font-size: 14px;
+       text-align: center;
+       font-weight: 200;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+     }
+      
+}
+@media screen and (max-width: 720px) {
+    /* Entete projet  entete section*/
+    .entete_section{
+        width: 90%;
+    }
+    .titre_restaurant{
+        font-size:18px;
+    }
+    .titre_menu {
+        font-size: 40px;
+    }
+
+    .nav-bar  {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        margin: 23px;
+        
+    }
+    
+    .nav-bar   .menu1{
+        display: flex;
+        justify-content: space-between;
+        width: 120px;
+         padding: 0;
+         margin-left:-80px ;
+         background: #c79322;
+    }
+    /* Section projects .section-plats */
+    .section-plats{
+        width: 90%;
+    }
+
+    /* Section projects .section-plats2 */
+    .section-plats2{
+        width: 90%;
+    }
+    /* Section projects .section-plats3 */
+    .section-plats3{
+        width: 90%;
+    }
+}
