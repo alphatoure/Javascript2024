@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+ </head>
+ <body>
+    <form action="traitement.php" id="myForm">
+        <label for="username">Nom d'utilisateur</label>
+        <input type="text" id="username">
+        <br>
+        <span id="error"></span>
+        <br>
+        <button type="submit">S'enregistrer</button>
+
+    </form>
+    <script>
+        let formulaire = document.getElementById("myForm")
+        let maRegex = /^[a-zA-Z-\s]+$/
+        formulaire.addEventListener('submit', function(e){
+            let user = document.getElementById('username')
+            if(user.value.trim() == ""){
+                let monError = document.getElementById('error')
+                monError.innerHTML = "Le nom ne doit pas etre vide";
+                monError.style.color = "red"
+                e.preventDefault()
+            }else if(maRegex.test(user.value) == false){
+                let monError = document.getElementById('error')
+                monError.innerHTML = "le input ne comporte que des lettre et des tirets";
+                monError.style.color = "red"
+                e.preventDefault()
+            }
+        })
+    </script>
+ </body>
+ </html>

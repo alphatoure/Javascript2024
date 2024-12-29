@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .citation{
+            font-style: italic;
+            color: rgb(160, 71, 71);
+        }
+        .fontVert{
+            background:rgb(50,139,95)
+        }
+    </style>
+</head>
+<body>
+    <h1 id="id">DOM HTML</h1>
+    <p>
+        Chapitre1: Lorem ipsum dolor sit amet.
+        <strong>Text Gras</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ducimus. <span class="citation">
+            Citation 1: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, deserunt? Doloremque, reiciendis.
+        </span>
+    </p>
+    <p>
+        Chapitre1: Lorem ipsum dolor sit amet.
+        <strong>Text Gras</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ducimus. <span class="citation">
+            Citation 1: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, deserunt? Doloremque, reiciendis.
+        </span>
+    </p>
+   <ul>
+         <li>Fraise</li>
+         <li>Pommes</li>
+         <li>Poires</li>
+         <li>Bannane</li>
+         <li>Kiwis</li>
+         <li>Raisin</li>
+   </ul>
+   <a href="https://www.google.fr">Clicquez ici</a>
+   <script>
+    const ul = document.querySelector('ul')
+     console.log( ul.textContent);
+   </script>
+</body>
+</html>
